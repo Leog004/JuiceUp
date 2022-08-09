@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="JuiceUp Mcallen">
+        <meta name = "description" content ="Juice Up Mcallen is the the Rio Grande Valley's ONLY all-natural cold pressed juice bar. We juice vegetable and fruits that become alive with enzymes to make you feel your best.">
+        <meta name="keywords" content="Juice Up, JuiceUp Mcallen, Juice Up Mcallen, Juice Bar, Detox, lose weight, health, juice cleanse, juice, mcallen juice, juice receipe, Mcallen Juice Bar, Juice Bar Mcallen, Texas Juice Bar, Younger Skin" />
+        
+        
+        <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/animate.css">
+
+        <link rel="stylesheet" type="text/css" href= "Recources/CSS/syle.css">
+        <link rel="stylesheet" type="text/css" href= "Recources/CSS/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,300i,400" rel="stylesheet" type="text/css">
+        
+           <link rel="apple-touch-icon" sizes="180x180" href="./Recources/favicons/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="./Recources/favicons/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="./Recources/favicons/favicon-16x16.png">
+            <link rel="manifest" href="./Recources/favicons/site.webmanifest">
+            <link rel="mask-icon" href="./Recources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+            <link rel="shortcut icon" href="./Recources/favicons/favicon.ico">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="msapplication-config" content="./Recources/favicons/browserconfig.xml">
+            <meta name="theme-color" content="#ffffff">
+
+        <title>JuiceUp</title>
+
+    </head>
+    <body>
+       <header id="menu">
+           <nav>
+           <div class="row">
+               <style>
+                   img{
+                       opacity: 0.88;
+                   }
+               </style>
+               <a href="#menu">
+               <img src="Recources/img/JuiceUpLogo.png" alt="JuiceUp logo" class="logo">
+               <img src="Recources/img/JuiceUpLogo.png" alt="JuiceUp logo" class="logo-black">
+                   </a>
+               <ul class="main-nav js--main-nav">
+                <li><a href="About.html">About Us</a></li>
+               <li><a href ="#features">Why Juice?</a></li>
+               <li><a href ="#sign-up">Packages</a></li>
+               <li><a href ="#location">Our Location</a></li>
+               <li><a href ="https://www.juice-uprgvstore.com/" target="_blank">Menu</a></li>
+
+               </ul>
+               
+               <a class = "mobile-nav-icon js--nav-icon"><i class = "ion-navicon-round"></i></a>
+               </div>
+           </nav>
+        <div class="hero-text-box" >
+           <h1>Simple. Organic. Healthy.</h1>
+            <a class="btn btn-full" href ="https://www.juice-uprgvstore.com/" target="_blank" >View Menu</a> 
+            
+            <a class="btn btn-ghost js--scroll-to-start" href="#"> Show me more
+            </a>
+            <p><br></p>
+            <div class="gh-button-ifrm" data-customer-id="825560" data-restaurant-name="Juice Up" data-button-type="branded" data-button-color="red" data-button-size="large" data-env="prod" data-url="juice-up-4000-n-jackson-st-pharr" data-tracking-id="65033" data-restaurant-address="4000 N Jackson St, Pharr TX, 78577" data-version="1.0" data-link-type="gh"></div><script src="https://gh-prod-nitrosites.s3.amazonaws.com/scripts/iframeLib.min.js"></script>
+
+            
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+            
+           </div>
+        
+        </header>
+        
+        <section class="section-features js--section-features" id = "features">
+        <div class="row">
+            <h2>Benefits of Juicing.</h2>
+                <section class="section-meals">
+            <ul class="meals-showcase clearfix">
+        <li>
+                <figure class="meal-photo">
+                <img src="Recources/img/JuiceUpImage1.jpg" alt="Juice-Up Products">
+                </figure>    
+            </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="Recources/img/JuiceUpImage4.jpg" alt = "Juice-Up Wheet Grass">
+                </figure>    
+            </li>    
+                     <li>
+                <figure class="meal-photo">
+                <img src="Recources/img/JuiceUpImage3.jpg" alt="Vegatble and Fruits">
+                </figure>    
+            </li>
+                <li>
+                <figure class="meal-photo">
+                <img src="Recources/img/JuiceUpImage5.jpg" alt="Juice-Up Products 2">
+                </figure>    
+            </li>
+            </ul>
+            <br>
+            </section>
+            <p class="long-copy">
+            Juicing is a natural way to feed our bodies with essential minerals, vitamins, and living enzymes. Almost all of the nutrients our bodies need can be found in the juice of raw fruits and vegetables. Incorporate juice into your life, and pack more healthy choices into your days.
+            </p>
+            </div>
+        
+            <div class="row js--wp-1">
+            <div class="col span-1-of-4 box">
+                <i class="ion-arrow-graph-up-right icon-big"></i>
+                <h3>IMPROVE DIGESTION</h3>
+                <p>
+                    Raw juice is digested quickly and easily, allowing us the opportunity to increase our body’s natural digestive efficiencies
+                </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                <i class="ion-android-bicycle icon-big"></i>
+                <h3>INCREASE ENERGY</h3>
+                <p>
+                   Juice essentially cuts out a step in digesting and metabolizing nutrients, allowing our bodies to better spend our energy elsewhere.
+                </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                <i class="ion-android-happy icon-big"></i>
+                <h3>GLOW FROM WITHIN</h3>
+                <p>
+                   Antioxidants in fresh juice can lead to healthier and more radiant hair, skin, and nails that glow from the inside out!
+                </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                <i class="ion-android-sync icon-big"></i>
+                <h3>BOOST IMMUNITY</h3>
+                <p>
+                   Fresh juice floods your body with antioxidants that boost your immune system
+                </p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="section-steps">
+        <div class="row">
+            <h2>Find Us on Clover!</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                <img src="Recources/img/JuiceUpClover.png" alt="JuiceUp Facebook on Iphone" class="app-screen js--wp-2" style="width:100%;">
+                </div>
+                
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step">
+                        <div>1</div>
+                        <p style="line-height: 2.5;">
+                           Order ahead and select pick up time. 
+                        </p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p style="line-height: 2.5;">
+                        Recieve discounts and promotions!</p>
+                    </div>
+                        <div class="works-step">
+                        <div>3</div>
+                        <p style="line-height: 2.5;">
+                        Earn points to reedem items. 
+                        </p>
+                    </div>
+                    
+                    <a href="https://apps.apple.com/us/app/clover/id428620381" target="_blank", class="btn-app"><img src="https://www.clover.com/static/media/clover-logo.4204a79c.svg" alt="App Store Button"> </a>
+                    
+                    <a href="https://play.google.com/store/apps/details?id=com.getperka.android&hl=en_US&gl=US" class="btn-app" style="margin-left:15px;"><img src="Recources/img/download-app-android.png" alt="Play Store Button"> </a>
+                </div>    
+            </div>
+        
+        </section>
+        
+<section class="section-testimonials">
+        <div class="row">
+        <h2>Our customers can't live without us</h2>
+            </div>
+            <div class="row">
+            <div class="col span-1-of-4">
+                <blockquote>"The Best Juice Bar in the Rio Grande Valley!!! Thank you for always carrying the vision of keeping the people from the valley knowledgeable and healthy" </blockquote>
+                <cite><img src="Recources/img/JuiceUpCustomer2.jpg" alt="customer_2">Alberto Duncan</cite>      
+            </div>
+
+            <div class="col span-1-of-4">
+                <blockquote>"When I arrived she had my juices ready and they were outstanding. I had several of the juices on the menu as well as, a few custom juices and they were all perfect! Thank you"</blockquote>
+                <cite><img src="Recources/img/JuiceUpCustomer3.jpg" alt="customer_3">James Eppolito</cite> 
+            </div>
+
+            <div class="col span-1-of-4">
+                <blockquote>"Thank you for a amazing first experience about juicing loved the Mean green juice and chia pudding it was a hit!! Felt great with the ginger shot !! Can't wait to go back !!" </blockquote>
+                <cite><img src="Recources/img/JuiceUpCustomer1.jpg" alt="customer_4">Maribel Quintero</cite>      
+            </div>
+                <div class="col span-1-of-4">
+                <blockquote>"I had the South Padre juice and it was really good and refreshing. I also had my first wheatgrass shot! I was thinking that shot was going to be awful and I was so wrong...it was good!"</blockquote>
+                <cite><img src="Recources/img/JuiceUpCustomer4.jpg" alt="customer_1">Lisa Sekula </cite>      
+            </div>
+
+        </div>
+        </section>
+        
+        <section class = "section-plans" id = "sign-up">
+        <div class = "row">
+            <h2>Start Living Healthy Today with our Juice Cleanse</h2>
+            </div>
+            
+            <div class ="row">
+            <div class = "col span-1-of-3">
+                <div class ="plan-box">
+                    <div>
+                    <h3>1 - Day Challenge</h3>
+                        <p class = "plan-price">$41.25 </p>
+                        <p class = "plan-price-meal">
+                            &nbsp;
+                        </p>
+                    </div>
+                    
+                    <div>
+                    <ul>
+                        <li> <i class = "ion-android-done"> 5 Juices </i></li>
+                        <li> <i class = "ion-android-done"> 1 Chia Seed Pudding </i></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                    <a href = "http://www.juice-uprgvstore.com/collections/package/products/one-day-juice-cleanse" class = "btn btn-full">Sign Up     Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+                
+                <div class = "col span-1-of-3">
+                <div class ="plan-box">
+                    <div>
+                    <h3>3 - Day Challenge</h3>
+                        <p class = "plan-price">$123.25 </p>
+                        <p class = "plan-price-meal">
+                            &nbsp;
+                        </p>
+                    </div>
+                    
+                    <div>
+                    <ul>
+                        <li> <i class = "ion-android-done"> 15 Juices </i></li>
+                        <li> <i class = "ion-android-done"> 3 Chia Seed Pudding </i></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                    <a href = "http://www.juice-uprgvstore.com/collections/package/products/three-day-juice-cleanse" class = "btn btn-ghost">Sign Up Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+                
+                <div class = "col span-1-of-3 js--wp-3">
+                <div class ="plan-box">
+                    <div>
+                    <h3>5 - Day Challenge</h3>
+                        <p class = "plan-price">$206.25 </p>
+                        <p class = "plan-price-meal">&nbsp;</p>
+                    </div>
+                    
+                    <div>
+                    <ul>
+                        <li> <i class = "ion-android-done"> 25 Juices </i></li>
+                        <li> <i class = "ion-android-done"> 5 Chia Seed Pudding </i></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                    <a href = "http://www.juice-uprgvstore.com/collections/package/products/five-day-juice-cleanse" class = "btn btn-ghost">Sign Up Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        
+        <div class= "section-map" id ="location">
+         <div class = "map"></div>
+            <div class= "form-box">
+            <div class = "row">
+            <h2>Our Location</h2>
+                <div class = "row">
+                    
+            </div>
+                
+                   <div class = "col span-1-of-1">
+        <ul class = "footer-nav">
+            <li>Adress:<strong> 4000 N Jackson Rd, Pharr, Tx 78577</strong></li>
+            <li>Phone Number:<strong> 956-223-4468</strong></li>
+            </ul>
+        </div>
+            </div>
+            
+                  <div class = "col span-1-of-1">
+        <ul class = "footer-nav">
+            <li>Business Hours:<strong> Monday - Friday: 7am - 9pm </strong></li>
+            <ul></ul>
+            <li>Business Hours:<strong> Saturday: 7am - 7pm</strong></li>
+            <ul></ul>
+            <li>Business Hours:<strong> Sunday: Closed</strong></li>
+                      </ul>
+        </div>
+            
+        </div>
+        </div>
+        
+        <section class="section-form" id ="form" >
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="mailer.php" class="contact-form">
+                <div class="row">
+                    
+                    
+                
+                    
+                    
+                    <?php                      
+    if($_GET['success'] == 1) {
+      echo"<div class=\"form-messages success\">Thank you! Your message has been sent!</div>";
+    }
+    if($_GET['success'] == -1) {
+      echo"<div class=\"form-messages error\">Ooops! Sorry, something went wrong. Please try again.</div>";
+    }
+?>
+                    
+                    
+                    
+                    </div>
+                
+                    <div class = "row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    
+                  
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                    <select name="find-us" id="find-us">
+                        <option value="friends" >Friends</option>
+                        <option value="search" selected>Search engine</option>
+                        <option value="ad">Adertisement</option>
+                        <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked> Yes, please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col span-1-of-3">
+                        <label> </label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="send it!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+        
+        <section class ="section-steps">
+            <div clas = "row">
+                <h2>Check out this video!</h2>
+            </div>
+        <div class = "row">
+            <div class = "col span-1-of-2">
+                <iframe class = "video" id="iframe" 
+src="https://www.youtube.com/embed/TLQhfN76aAc">
+</iframe>     
+            </div>
+            <div class="col span-1-of-2">
+<iframe style="width: 100%;height: 450px;border-top-style: groove;margin: 0; padding: 0;" id="iframe"  src="https://player.vimeo.com/video/183518881" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>                
+            </div>
+            </div>
+        </section>
+        
+        
+       
+        
+        
+        
+<footer>
+    
+    <div class = "row">
+        <div class = "col span-1-of-2">
+        <ul class = "footer-nav">
+            <li><a href="About.html" target="_blank">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="http://www.themonitor.com/entertainment/article_c2705506-897e-11e5-bfd5-9b2ad9a4f9b4.html" target="_blank">Press</a></li>            
+            </ul>
+        </div>
+        
+        <div class = "col span-1-of-2">
+        <ul class = "social-links">
+            <li><a href="https://www.facebook.com/Juice-Up-583354791712160/" target="_blank"><i class = "ion-social-facebook"></i></a></li>
+            <li><a href="https://twitter.com/JuiceUpRGV"><i class = "ion-social-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/juice_up4/?hl=en"><i class = "ion-social-instagram"></i></a></li>            
+            </ul>
+        </div>
+        
+    <div class = "row">
+        <p>
+        CopyRight &copy; 2019 by JuiceUp. All Rights Reserved. <br>
+            L.G
+        
+        </p>
+        
+        </div>
+        
+    </div>
+        </footer>
+        
+        
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src ="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<script src = "//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src = "//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+<script src="Recources/js/script.js"></script>
+<script src = "Vendors/js/jquery.waypoints.min.js"></script>
+<script src ="Recources/js/gmaps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Dn-4USfR5HDSvDyPNImgUAPsrnLH4Yo"></script>
+    </body>
+
+    
+</html>
+
+<!--
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
