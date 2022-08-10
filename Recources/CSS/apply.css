@@ -879,17 +879,29 @@ footer p {
   height: 500px;
 }
 
-.section-form {
+/* .section-form {
   background-image: linear-gradient(
-      rgba(207, 109, 23, 0.7),
-      rgba(83, 122, 12, 0.7)
+      rgba(207, 109, 23, 1),
+      rgba(83, 122, 12, 0.9)
     ),
     url(/Recources/img/JuiceUpImage5.JPG) !important;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -23px;
-}
+} */
 /* .section-form {
   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
     url(/Recources/img/JuiceUpImage5.JPG) !important;
 } */
+
+.section-form {
+  background-image: linear-gradient(
+      rgba(207, 109, 23, 0.95),
+      rgba(83, 122, 12, 0.95)
+    ),
+    url(/Recources/CSS/img/JuiceUpImage3.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 110%;
+  margin-top: -23px;
+}
