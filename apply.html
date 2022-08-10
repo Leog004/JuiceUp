@@ -115,18 +115,26 @@
       </div>
     </nav>
 
-
-
     <!-- Card Section -->
     <section class="section-features js--section-features" id="features">
       <div class="row">
-
-        <div style="display:flex; width: 100%; align-items:center; justify-content:center; gap:.2rem;">
-          <h2>Join the </h2>
-          <img style="height: 100px; margin-bottom: 40px; width: auto;" src="Recources/img/JuiceUpLogoNew.png" />
-          <h2> Team</h2>
+        <div
+          style="
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 0.2rem;
+            margin-top: 2.5rem;
+          "
+        >
+          <h2>Join the</h2>
+          <img
+            style="height: 100px; margin-bottom: 40px; width: auto"
+            src="Recources/img/JuiceUpLogoNew.png"
+          />
+          <h2>Team</h2>
         </div>
-        
 
         <p class="long-copy">
           Juice-Up is a great company to team up with to help sustain a healthy
@@ -159,7 +167,6 @@
           <button class="apply-morning">Apply Now</button>
         </div>
 
-
         <div id="mid-card" class="col span-1-of-3 box">
           <div class="job-box">
             <i class="ion-android-happy icon-big"></i>
@@ -182,7 +189,6 @@
           </div>
         </div>
 
-
         <div id="evening-card" class="col span-1-of-3 box">
           <i class="ion-android-sync icon-big"></i>
           <h3>EVENING ASSOCIATE</h3>
@@ -202,13 +208,10 @@
           <br />
           <button class="apply-evening">Apply Now</button>
         </div>
-
-        
       </div>
     </section>
 
-
-<!-- Images -->
+    <!-- Images -->
     <section class="section-meals">
       <ul class="meals-showcase clearfix">
         <li>
@@ -247,9 +250,19 @@
       <br />
     </section>
 
-
-<!-- Application Section -->
-    <section class="section-form" id="form">
+    <!-- Application Section -->
+    <section
+      style="
+        /* background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(Recources/img/JuiceUpImage5.jpg); */
+        color: #fff;
+      "
+      class="section-form"
+      id="form"
+    >
       <div class="row">
         <h2>Your Application</h2>
       </div>
@@ -272,6 +285,7 @@
               />
             </div>
           </div>
+
           <div class="row">
             <div class="col span-1-of-3">
               <label for="email">Email</label>
@@ -283,6 +297,20 @@
                 id="email"
                 placeholder="Your email"
                 required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="col span-2-of-3">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                placeholder="Phone Number"
               />
             </div>
           </div>
@@ -312,10 +340,13 @@
               <label>Upload Resume: </label>
             </div>
             <div class="col span-2-of-3">
-              <input type="file"
-              id="file-upload" name="file-upload"
-              accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
-              text/plain, application/pdf, image/*">
+              <input
+                type="file"
+                id="file-upload"
+                name="file-upload"
+                accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+              text/plain, application/pdf, image/*"
+              />
             </div>
           </div>
           <div class="row">
@@ -323,15 +354,17 @@
               <label> </label>
             </div>
             <div class="col span-2-of-3">
-              <input type="submit" value="Submit Application" />
+              <input
+                style="margin: 40px; border-radius: 12px; margin-left: 0%"
+                type="submit"
+                value="Submit Application"
+              />
             </div>
           </div>
         </form>
       </div>
     </section>
 
-
-  
     <!-- Footer -->
     <footer>
       <div class="row">
@@ -387,31 +420,28 @@
       var eveningCard = document.getElementById("evening-card");
       var dropDown = document.getElementById("dd-position");
 
-      if(morningCard){
-        morningCard.addEventListener("click", function(){
-          
+      if (morningCard) {
+        morningCard.addEventListener("click", function () {
           window.location.href = "#form";
           dropDown.value = "morning";
           // redirect us
         });
       }
 
-      if(midCard){
-        midCard.addEventListener("click", function(){
+      if (midCard) {
+        midCard.addEventListener("click", function () {
           window.location.href = "#form";
           dropDown.value = "mid";
         });
       }
 
-      if(eveningCard){
-        eveningCard.addEventListener("click", function(){
+      if (eveningCard) {
+        eveningCard.addEventListener("click", function () {
           window.location.href = "#form";
           dropDown.value = "evening";
         });
       }
-
     </script>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
