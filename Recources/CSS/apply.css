@@ -48,10 +48,20 @@ section{
 .box{
   padding: 1%;
   height: 500px;
-  border-radius: 40px;
+  border-radius: 12px;
   background-color: #fff;
-  box-shadow: 3px 3px 8px 5px;
+  cursor: pointer;
+  border: 1px solid rgb(179, 174, 174, 0.6);
+  transition: all 0.1s ease-in-out;
 }
+
+.box:hover{
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  border: 2px solid rgb(179, 174, 174);
+  background-color: rgb(255, 254, 251)
+}
+
+
 /* ---------------------------- */
 /* Headers */
 /* ---------------------------- */
@@ -103,9 +113,9 @@ h3{
 
 .long-copy{
   line-height: 145%;
-  width: 70%;
-  margin-left: 15%;
+  width: 85%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .box p {
@@ -117,7 +127,7 @@ h3{
 /* Apply Buttons */
 /* ---------------------------- */
 
-.apply-morning {
+.apply-morning, .apply-mid, .apply-evening{
   display: inline-block;
   text-decoration: none;
   padding: 10px 30px;
@@ -132,44 +142,14 @@ h3{
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
- 
+  cursor: pointer;
 }
 
-.apply-mid {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 200px;
-  font-weight: 300;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-  margin-left: 25%;
-  margin-top: 8%;
-  border-color: #e67e22;
-  margin-right: 15px;
-  color: #fff;
-  background-color: #e67e22;
+.apply-morning:hover, .apply-mid:hover, .apply-evening:hover{
+  background-color: #e48d42;
   border: 1px solid #e67e22;
-  color: #fff;
 }
 
-.apply-evening {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 200px;
-  font-weight: 300;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-  margin-left: 25%;
-  margin-top: 8%;
-  margin-right: 15px;
-  color: #fff;
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
-  color: #fff;
-
-}
 /* ---------------------------- */
 /* ICONS*/
 /* ---------------------------- */
@@ -866,6 +846,15 @@ footer p {
 @media only screen and (max-width: 700px){
   .modal-content {
       width: 100%;
+  }
+
+  .apply-morning, .apply-mid, .apply-evening {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .box {
+    height: 100%;
   }
 }
 

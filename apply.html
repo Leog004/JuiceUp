@@ -115,9 +115,18 @@
       </div>
     </nav>
 
+
+
+    <!-- Card Section -->
     <section class="section-features js--section-features" id="features">
       <div class="row">
-        <h2>Join the Juice-Up Team</h2>
+
+        <div style="display:flex; width: 100%; align-items:center; justify-content:center; gap:.2rem;">
+          <h2>Join the </h2>
+          <img style="height: 100px; margin-bottom: 40px; width: auto;" src="Recources/img/JuiceUpLogoNew.png" />
+          <h2> Team</h2>
+        </div>
+        
 
         <p class="long-copy">
           Juice-Up is a great company to team up with to help sustain a healthy
@@ -130,7 +139,7 @@
       </div>
 
       <div class="row js--wp-1">
-        <div class="col span-1-of-3 box">
+        <div id="morning-card" class="col span-1-of-3 box">
           <i class="ion-android-person icon-big"></i>
           <h3>MORNING ASSOCIATE</h3>
           <p>
@@ -149,7 +158,9 @@
           <br />
           <button class="apply-morning">Apply Now</button>
         </div>
-        <div class="col span-1-of-3 box">
+
+
+        <div id="mid-card" class="col span-1-of-3 box">
           <div class="job-box">
             <i class="ion-android-happy icon-big"></i>
             <h3>MID-DAY ASSOCIATE</h3>
@@ -170,7 +181,9 @@
             <button class="apply-mid">Apply Now</button>
           </div>
         </div>
-        <div class="col span-1-of-3 box">
+
+
+        <div id="evening-card" class="col span-1-of-3 box">
           <i class="ion-android-sync icon-big"></i>
           <h3>EVENING ASSOCIATE</h3>
           <p>
@@ -189,8 +202,13 @@
           <br />
           <button class="apply-evening">Apply Now</button>
         </div>
+
+        
       </div>
     </section>
+
+
+<!-- Images -->
     <section class="section-meals">
       <ul class="meals-showcase clearfix">
         <li>
@@ -228,9 +246,12 @@
       </ul>
       <br />
     </section>
+
+
+<!-- Application Section -->
     <section class="section-form" id="form">
       <div class="row">
-        <h2>We're happy to hear from you</h2>
+        <h2>Your Application</h2>
       </div>
       <div class="row">
         <form method="post" action="mailer.php" class="contact-form">
@@ -267,32 +288,34 @@
           </div>
           <div class="row">
             <div class="col span-1-of-3">
-              <label for="find-us">How did you find us?</label>
+              <label for="find-us">Position:</label>
             </div>
             <div class="col span-2-of-3">
-              <select name="find-us" id="find-us">
-                <option value="friends">Friends</option>
-                <option value="search" selected>Search engine</option>
-                <option value="ad">Adertisement</option>
-                <option value="other">Other</option>
+              <select name="dd-position" id="dd-position">
+                <option value="all">All</option>
+                <option value="morning">Morning Associate</option>
+                <option value="mid">Mid Associate</option>
+                <option value="evening">Evening Associate</option>
               </select>
             </div>
           </div>
           <div class="row">
             <div class="col span-1-of-3">
-              <label>Newsletter</label>
+              <label>Why do you want to work at Juice Up?</label>
             </div>
             <div class="col span-2-of-3">
-              <input type="checkbox" name="news" id="news" checked /> Yes,
-              please
+              <textarea name="message" placeholder="Your reason"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col span-1-of-3">
-              <label>Drop us a line</label>
+              <label>Upload Resume: </label>
             </div>
             <div class="col span-2-of-3">
-              <textarea name="message" placeholder="Your message"></textarea>
+              <input type="file"
+              id="file-upload" name="file-upload"
+              accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+              text/plain, application/pdf, image/*">
             </div>
           </div>
           <div class="row">
@@ -300,13 +323,15 @@
               <label> </label>
             </div>
             <div class="col span-2-of-3">
-              <input type="submit" value="send it!" />
+              <input type="submit" value="Submit Application" />
             </div>
           </div>
         </form>
       </div>
     </section>
 
+
+  
     <!-- Footer -->
     <footer>
       <div class="row">
@@ -356,6 +381,38 @@
     </footer>
 
     <!-- Scripts -->
+    <script type="text/javascript">
+      var morningCard = document.getElementById("morning-card");
+      var midCard = document.getElementById("mid-card");
+      var eveningCard = document.getElementById("evening-card");
+      var dropDown = document.getElementById("dd-position");
+
+      if(morningCard){
+        morningCard.addEventListener("click", function(){
+          
+          window.location.href = "#form";
+          dropDown.value = "morning";
+          // redirect us
+        });
+      }
+
+      if(midCard){
+        midCard.addEventListener("click", function(){
+          window.location.href = "#form";
+          dropDown.value = "mid";
+        });
+      }
+
+      if(eveningCard){
+        eveningCard.addEventListener("click", function(){
+          window.location.href = "#form";
+          dropDown.value = "evening";
+        });
+      }
+
+    </script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
