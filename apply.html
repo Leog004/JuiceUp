@@ -252,16 +252,7 @@
 
     <!-- Application Section -->
     <section
-      style="
-        /* background-image: linear-gradient(
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-          ),
-          url(Recources/img/JuiceUpImage5.jpg); */
-        color: #fff;
-        font-size: larger;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-      "
+      style="color: #fff; font-size: larger; text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);"
       class="section-form"
       id="form"
     >
@@ -269,9 +260,8 @@
         <h2>Your Application</h2>
       </div>
       <div class="row">
-        <form method="post" action="mailer.php" class="contact-form">
-          <div class="row"></div>
-
+        <form method="post" action="/Recources/Php/apply.php" enctype="multipart/form-data" class="contact-form">
+          <div class="row" id="mail-status"></div>
           <div class="row">
             <div class="col span-1-of-3">
               <label for="name">Name</label>
@@ -311,7 +301,6 @@
                 type="tel"
                 id="phone"
                 name="phone"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 placeholder="Phone Number"
               />
             </div>
@@ -442,6 +431,26 @@
           window.location.href = "#form";
           dropDown.value = "evening";
         });
+      }
+
+      const mailStatus = document.getElementById("mail-status");
+      // Get param called success
+      if (window.location.search.indexOf("success") != -1) {
+        // append html to mailStatus
+        mailStatus.innerHTML =
+          "<div class=\"form-messages success\">Thank you! Your message has been sent!</div>";
+
+        // remove the success param from the url
+        window.history.pushState("", "", window.location.pathname + '#form');
+
+      }
+
+      if(window.location.search.indexOf("fail") != -1){
+        mailStatus.innerHTML =
+          "<div class=\"form-messages error\">Oh Oh! Something went wrong. Please Try Again!</div>";
+
+        // remove the success param from the url
+        window.history.pushState("", "", window.location.pathname + '#form');
       }
     </script>
 

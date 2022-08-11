@@ -25,7 +25,7 @@
     
         <script type="text/javascript">
     function delayedRedirect(){
-        window.location = "index.php?success=1#form";
+        window.location = "apply.php?success=1#form";
     }
     </script>
 
@@ -34,45 +34,42 @@
 </head>
 <body onLoad="setTimeout('delayedRedirect()', 100)" style="background-color:#fff;">
 <?php
-        $name = strip_tags(trim($_POST["name"]));
-        $name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $message = trim($_POST["message"]);
-  
-        if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location:index.php?success=-1#form");
+
+    $name = strip_tags(trim($_POST["name"]));
+    $name = str_replace(array("\r","\n"),array(" "," "),$name);
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $phone = filter_var(trim($_POST["phone"]), FILTER_SANITIZE_NUMBER_INT);
+    $message = trim($_POST["message"]);
+    $file = $_FILES['file-upload']['name'];
+
+    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location:apply.php?success=-1#form");
         exit;
     }
-						$mail = $_POST['email'];
 
-						/*$subject = "".$_POST['subject'];*/
-//						$to = "leog4za@gmail.com";		/* YOUR EMAIL HERE */
-						$to = "jurella1962@gmail.com";		/* YOUR EMAIL HERE */
-						$subject = "Information Email from Juice Up";
-						$headers = "From: Juice Up <noreply@Juice-uprgv.com>";
-						$message = "DETAILS\n";
-    				    $message .= "\n1) Email: " . $_POST['email'] . "\n";
-						$message .= "\n2) Name: " . $_POST['name'] . "\n";
-    				    $message .= "\n3) Find-Us: " . $_POST['find-us'] . "\n";
-						$message .= "\n4) Message info: " . $_POST['message'];
-						
-												
-						//Receive Variable
-						$sentOk = mail($to,$subject,$message,$headers,'-fjurella1962@gmail.com');
-						
-						//Confirmation page
-						$user = "$mail";
-						$usersubject = "Your Requested Information";
-						$userheaders = "From: admin@juice-uprgv.com". "\r\n".
-                                        "Content-type: text/html; charset=iso-8859-1";						
+    $mail = $email;
+    $to = "jurella1962@gmail.com";		/* YOUR EMAIL HERE */
+    $subject = "New Applicant Email from Juice Up";
+    $headers = "From: Juice Up <noreply@Juice-uprgv.com>";
+    $message = "DETAILS\n";
+    $message .= "\n1) Email: " . $email. "\n";
+    $message .= "\n2) Name: " . $name. "\n";
+    $message .= "\n3) Phone Number: " . $phone. "\n";
+    $message .= "\n4) Position Applied: " . $_POST['dd-position'] . "\n";
+    $message .= "\n5) Message info: " . $message. "\n";
+    $message .= "\n6) Attached File: " . $file. "\n";
     
-//                        $userheaders = "From: admin@lgnetworkdesign.com". "\r\n".
-//                            "Reply-To: Leog4za@gmail.com". "\r\n".
-//                            "Content-type: text/html; charset=iso-8859-1";
+                            
+    //Receive Variable
+    $sentOk = mail($to,$subject,$message,$headers,'-fjurella1962@gmail.com');
     
-						/*$usermessage = "Thank you for your time. Your quotation request is successfully submitted.\n"; WITH OUT SUMMARY*/
-						//Confirmation page WITH  SUMMARY
-						$usermessage = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+    //Confirmation page
+    $user = "$mail";
+    $usersubject = "Your Requested Information";
+    $userheaders = "From: admin@juice-uprgv.com". "\r\n".
+                    "Content-type: text/html; charset=iso-8859-1";						
+    
+    $usermessage = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
     <html xmlns='http://www.w3.org/1999/xhtml'>
     <head>
       <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
@@ -424,8 +421,9 @@ td[class='spechide']
     
     
     
+mail($user,$usersubject,$usermessage,$userheaders,'-fleog4za@gmail.com');
     
-						mail($user,$usersubject,$usermessage,$userheaders,'-fadmin@juice-uprgv.com');
+    // mail($user,$usersubject,$usermessage,$userheaders,'-fadmin@juice-uprgv.com');
 //						mail($user,$usersubject,$usermessage,$userheaders,'-fadmin@juice-uprgv.com');
 	
 ?>
