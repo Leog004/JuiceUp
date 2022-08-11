@@ -427,7 +427,9 @@ src="https://www.youtube.com/embed/TLQhfN76aAc">
         <ul class = "footer-nav">
             <li><a href="About.html" target="_blank">About Us</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="http://www.themonitor.com/entertainment/article_c2705506-897e-11e5-bfd5-9b2ad9a4f9b4.html" target="_blank">Press</a></li>            
+            <li><a href="http://www.themonitor.com/entertainment/article_c2705506-897e-11e5-bfd5-9b2ad9a4f9b4.html" target="_blank">Press</a></li> 
+            <li><a href="/apply.html">Join The Team</a></li>
+           
             </ul>
         </div>
         
