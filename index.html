@@ -321,24 +321,7 @@
         </div>
         <div class="row">
             <form method="post" action="mailer.php" class="contact-form">
-                <div class="row">
-                    
-                    
-                
-                    
-                    
-                    <?php                      
-    if($_GET['success'] == 1) {
-      echo"<div class=\"form-messages success\">Thank you! Your message has been sent!</div>";
-    }
-    if($_GET['success'] == -1) {
-      echo"<div class=\"form-messages error\">Ooops! Sorry, something went wrong. Please try again.</div>";
-    }
-?>
-                    
-                    
-                    
-                    </div>
+                <div class="row" id="mail-status"></div>
                 
                     <div class = "row">
                     <div class="col span-1-of-3">
@@ -454,7 +437,27 @@ src="https://www.youtube.com/embed/TLQhfN76aAc">
         </footer>
         
         
-        
+<script>
+    const mailStatus = document.getElementById("mail-status");
+      // Get param called success
+      if (window.location.search.indexOf("success") != -1) {
+        // append html to mailStatus
+        mailStatus.innerHTML =
+          "<div class=\"form-messages success\">Thank you! Your message has been sent!</div>";
+
+        // remove the success param from the url
+        window.history.pushState("", "", window.location.pathname + '#form');
+
+      }
+
+      if(window.location.search.indexOf("fail") != -1){
+        mailStatus.innerHTML =
+          "<div class=\"form-messages error\">Oh Oh! Something went wrong. Please Try Again!</div>";
+
+        // remove the success param from the url
+        window.history.pushState("", "", window.location.pathname + '#form');
+      }
+</script>        
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src ="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 <script src = "//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>

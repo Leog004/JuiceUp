@@ -50,7 +50,7 @@
     // $file = $_FILES['file-upload']['name'];
 
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL) or $error > 0) {
-        header("Location:/apply.html?success=-1#form");
+        header("Location:/apply.html?fail=1#form");
         exit;
     }
     

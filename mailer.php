@@ -25,7 +25,7 @@
     
         <script type="text/javascript">
     function delayedRedirect(){
-        window.location = "index.php?success=1#form";
+        window.location = "index.html?success=1#form";
     }
     </script>
 
@@ -40,7 +40,7 @@
         $message = trim($_POST["message"]);
   
         if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location:index.php?success=-1#form");
+        header("Location:index.html?fail=1#form");
         exit;
     }
 						$mail = $_POST['email'];
